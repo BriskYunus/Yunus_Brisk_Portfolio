@@ -1,0 +1,748 @@
+@charset "utf-8";
+/*CSS document*/
+
+* {
+  box-sizing: border-box;
+}
+
+.fa:hover
+{
+  background-color: white;
+}
+
+.hidden
+{
+	display: none;
+}
+
+#about2
+{
+  display: none;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #878787; 
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/8.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
+.logo {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  -webkit-filter: drop-shadow(7px 7px 10px rgba(0,0,0,0.5));
+}
+
+.logo:hover {
+  filter: grayscale(100%);
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#burgerCon {
+  display: none;
+  background-color: #fff;
+}
+
+#burgerCon.slideToggle {
+  display: block;
+  overflow: inherit;
+}
+
+#hamburgerNav {
+  margin: 0 auto;
+}
+
+#hamburgerNav li a {
+  display: block;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  color: #000000;
+}
+
+#hamburgerNav li a:hover {
+  color: #d8b407;
+  -webkit-transition: color 0.2s;
+}
+
+#hamburgerNav li {
+  border-bottom: 1px solid #d8b407;
+}
+
+#hamburgerNav li:first-child {
+  border-top: 1px solid #d8b407;
+}
+
+/* hides desktop logo */
+#deskNav{display:none;}
+
+#menuCon{display:none;}
+
+    #deskMenu{
+    display:flex;
+    }
+
+    #deskNav{
+       display:flex;
+       margin-top:30px;
+    }
+
+    #deskNav ul li{
+       margin-top:0px;
+    }
+
+    #deskNav ul li a{
+       margin-left:40px;
+       font-size:18px;
+       color:black;
+       opacity:0.6;
+       transition: 0.3s;
+       text-transform: uppercase;
+    }
+
+    #deskNav a:hover{
+        opacity:1.0;
+    }
+
+.header {
+  background-color: #8B8B8B;
+  padding: 30px;
+  text-align: center;
+}
+
+.about {
+  background-color: #7A7A7A;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.about h2 {
+  color: #EADB5D;
+  letter-spacing: 15px;
+  margin-bottom: 20px;
+}
+
+
+.skills {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.skills img {
+  float: left;
+  margin: auto;
+}
+
+#skills2:hover
+{
+  box-shadow: inset 0 0 500px 500px rgba(255, 255, 255, 0.2);
+}
+
+.brisk:hover .fadeIn
+{
+  opacity: 0.4;
+}
+
+
+.skills h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.skills p {
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#skills2
+{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #5A5A5A;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-align: justify;
+  color: #ECD860;
+}
+
+li
+{
+  margin: 30px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 0px solid;
+  -webkit-box-shadow: -3px 15px 39px -8px rgba(0,0,0,0.39);
+  -moz-box-shadow: -3px 15px 39px -8px rgba(0,0,0,0.39);
+  box-shadow: -3px 15px 39px -8px rgba(0,0,0,0.39);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #5A5A5A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ECD860;
+  color: black;
+  transition-duration: 0.3s;
+  border-top: 5px solid #5E5E5E;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+nav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+article
+{
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+@media (max-width: 900px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .brisk img {
+    display: none;
+  }
+  
+
+  .skills img
+  {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .container2 p {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .container2 {
+    padding-bottom: 4000px;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .skills img
+  {
+    width: 375px;
+    height: 375px;
+    margin: 0 auto;
+  }
+
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/18.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio {
+  display: -webkit-flex;
+  text-align: center;
+}
+
+#myWork
+{
+  background-color: #5E5E5E;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 15px;
+  color: #E4D660;
+  margin-bottom: 100px;
+  margin-top: -30px;
+}
+
+#myWork4
+{
+  background-color: #5E5E5E;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 15px;
+  color: #E4D660;
+  margin-top: -30px;
+}
+
+.work
+{
+  margin-top: 300px;
+}
+
+div.gallery {
+  border: 3px solid #ccc;
+  margin-bottom: 60px;
+}
+
+div.gallery:hover {
+  border: 3px solid #dfc983;
+  border-radius: 8px;
+  transition: 1s;
+  transition-duration: 0.2s;
+  -webkit-transform: translate(-2%, -2%);
+  -ms-transform: translate(-2%, -2%);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  div.gallery:hover {
+    border: 3px solid #dfc983;
+    border-radius: 8px;
+    transition: 1s;
+    transition-duration: 9s;
+    -webkit-transform: translate(-2%, -2%, -2%);
+    -ms-transform: translate(-2%, -2%, -2%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  .brisk{
+    margin-left: 70px;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  #navbar a {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  #navbar a {
+    font-size: 17px;
+    padding: 10px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/6.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navbar a.active
+{
+  border-top: 5px solid #ECD860;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #5A5A5A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #E7DD63;
+  transition-duration: .5s;
+}
+
+.container {
+  background-color: #878787;;
+  width: 100%;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.container4 {
+  background-color: #878787;;
+  width: 100%;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+  width: 50%;
+}
+
+.container2 {
+  background-color: #878787;;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 90px;
+  height: 1200px;
+}
+
+.container2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+.container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 60px;
+}
+
+#contact
+{
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#fname, #lname, #email, #subject
+{
+  border-radius: 10px;
+}
+
+#contact h2
+{
+  background-color: #dfc983;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: #383621;
+  letter-spacing: 10px;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("../images/20.jpg");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer
+{
+  height: 300px;
+  background-color: #5a5a5a;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#footerLogo
+{
+  padding-top: 30px;
+  font-size: 10px;
+  color: white;
+}
+
+#footerLogo p
+{
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+#about:before
+{
+  height: 75px;
+  display: block;
+  content: '';
+  background-color: #7A7A7A;
+}
+
+#myWork:before
+{
+  height: 40px;
+  display: block;
+  content: '';
+}
+
+#contact:before
+{
+  height: 70px;
+  display: block;
+  content: '';
+  background-color: #dec886;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: url("../images/banner.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax6 {
+  /* The image used */
+  background-image: url("../images/22.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax5 {
+  /* The image used */
+  background-image: url("../images/21.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.musicIcon {
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+}
+
+#myWork2
+{
+  background-color: #5E5E5E;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 15px;
+  color: #E4D660;
+  margin-top: -30px;
+}
+
+
+#myWork2:before
+{
+  height: 70px;
+  display: block;
+  content: '';
+}
+
+.musicIcon:hover {
+  fill: #DA4567;
+}
+
+#submitButton {
+  border-color: #E4D660;
+  background-color: #878787;
+  border-style: solid;
+  color: #E4D660;
+  padding: 10px 15px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+#submitButton:hover {
+  background-color: rgb(172, 162, 80);
+  transition: 0.6s;
+  color: #000000;
+  border-color: #878787;
+}
+
+
+#submitButton a {
+  text-decoration: none;
+  color: #E4D660;
+}
+
+#myWork3
+{
+  background-color: #5E5E5E;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 15px;
+  color: #E4D660;
+  margin-top: -10px;
+}
+
+#myWork5
+{
+  background-color: #5E5E5E;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 15px;
+  color: #E4D660;
+  margin-bottom: 100px;
+  margin-top: -30px;
+}
+
+#myWork3:before
+{
+  height: 70px;
+  display: block;
+  content: '';
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;}
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
