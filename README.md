@@ -1,4 +1,4 @@
-![GitHub Logo](/images/gitlogo.png)
+![GitHub Logo](/images/gitlogo2.png)
 
 # WORKSOFBRISK PORTFOLIO
 ## Brisk Yunus
