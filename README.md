@@ -1,4 +1,4 @@
-![GitHub Logo](/images/wob_logo_black.png)
+![GitHub Logo](/images/wob_logo_black.png =250x250)
 
 # WORKSOFBRISK PORTFOLIO
 ## Brisk Yunus
